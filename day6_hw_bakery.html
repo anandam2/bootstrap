@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Feedback Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+    <h3 class="display-4 text-center">Zam Zam Bakery</h3>
+    <h3>Feedback Form</h3>
+    <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" placeholder="Enter name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">            
+        </div>
+        <div class="form-group">
+            <label for="feedback">Feedback:</label>
+            <textarea class="form-control" rows="3" id="feedback"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="text">Email or Number</label>
+            <input type="text" class="form-control" placeholder="Enter email or number">
+
+        </div>
+
+        <div class="form-group">
+            <label for="rating">Satisfaction Level  <span id="ratingValue">5</span></label>
+            <input type="range" name="range" class="form-control-range" id="rating" min="1" max="10" step="1" value="5"oninput="document.getElementById('ratingValue').textContent = this.value">
+        </div>
+        <div class="form-group">
+            <label for="sel">Item:</label>
+            <select class="form-control" id="sel">
+                <option>Cake</option>
+                <option>Cookies</option>
+                <option>Pastries</option>
+            </select>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-secondary text-center">submit</button>
+        </div>
+    </div>
+    
+</body>
+</html>
